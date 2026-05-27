@@ -1,0 +1,48 @@
+{
+  "name": "social-media-content-bot",
+  "version": "1.0.0",
+  "description": "Telegram-based social media content pipeline with OpenAI draft generation, SQLite scheduling, and Make.com webhook publishing.",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "test": "node --import tsx --test tests/*.test.ts"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "social-media",
+    "scheduler",
+    "openai",
+    "makecom",
+    "content-pipeline",
+    "typescript"
+  ],
+  "author": "Maintainers",
+  "license": "MIT",
+  "dependencies": {
+    "grammy": "^1.35.0",
+    "better-sqlite3": "^11.8.1",
+    "openai": "^4.80.0",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InkAssists/ContentCreatorBot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/InkAssists/ContentCreatorBot/issues"
+  },
+  "homepage": "https://github.com/InkAssists/ContentCreatorBot#readme",
+  "engines": {
+    "node": ">=18"
+  }
+}

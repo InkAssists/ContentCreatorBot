@@ -1,0 +1,6 @@
+fly.toml
+Dockerfile
+.env
+data/
+node_modules/
+dist/
